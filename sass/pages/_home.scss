@@ -1,0 +1,24 @@
+.example-grid {
+
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 3rem;
+
+  margin: 7% auto;
+
+  &__block {
+    
+    grid-column: span 1;
+    height: 30rem;
+
+    &--1 { background-color: $color-primary-dark; }
+    &--2 { background-color: $color-primary; }
+    &--3 { background-color: $color-primary-light; }
+    &--4 { background-color: $color-secondary-light; }
+    &--5 { background-color: $color-secondary; }
+    &--6 { background-color: $color-secondary-dark; }
+
+  }
+
+}

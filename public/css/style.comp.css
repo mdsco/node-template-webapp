@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #999;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.example-grid {
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 3rem;
+  margin: 7% auto; }
+  .example-grid__block {
+    grid-column: span 1;
+    height: 30rem; }
+    .example-grid__block--1 {
+      background-color: #28b485; }
+    .example-grid__block--2 {
+      background-color: #55c57a; }
+    .example-grid__block--3 {
+      background-color: #7ed56f; }
+    .example-grid__block--4 {
+      background-color: #ffb900; }
+    .example-grid__block--5 {
+      background-color: #ff955c; }
+    .example-grid__block--6 {
+      background-color: #ff7730; }
